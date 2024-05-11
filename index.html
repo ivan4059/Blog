@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatti - Il Mio Blog Personale</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header, footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        main {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        article, .container {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            background-color: #f8f9fa;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p, label {
+            color: #666;
+            line-height: 1.6;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        button {
+            cursor: pointer;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvenuti nel Mio Blog</h1>
+    </header>
+    <main>
+        <article id="Chi sono?">
+            <h2>Chi sono?</h2>
+            <p>Mi chiamo Ivan, ho 10 anni e sono un appassionato di informatica. Nel mio blog, condivido articoli su esperienze informatiche, esperienze personali e molto altro.</p>
+            <p>Sono nato e vivo ancora a Verona, Italia. Quando non scrivo codice, mi piace fare attività fisica, come giocare a calcio, o gioco a Brawl Stars.</p>
+            <p>Spero di poter ispirare e coinvolgere le persone che condividono la mia passione per l'informatica.</p>
+        </article>
+
+        <article id="Da dove è nata la passione di proggrammare?">
+            <h2>Da dove è nata la passione di proggrammare?</h2>
+            <p>La mia passione per la programmazione è iniziata quando avevo 6/7 anni, usando <a href="https://scratch.mit.edu/">Scratch</a>, grazie a mio papà che mi ha mostrato dei piccoli e semplici tutorial. Da lì ho iniziato a cercare tutorial più difficili e ci riuscivo sempre. A 8 anni, visto che Scratch era diventato troppo facile, decisi di iniziare a fare pagine web.</p>
+            <p>Uno dei primi progetti che ho realizzato in HTML è stata una semplice pagina che spiegava un po' tutti i comandi base di HTML. Questa esperienza è stata fondamentale perché ogni volta che mi dimenticavo un comando, andavo subito lì e mi ripassavo un po' tutti i comandi. Al giorno d'oggi, i comandi base e anche quelli un po' più complicati, me li ricordo.</p>
+            <p>Attraverso il mio blog, spero di condividere non solo le mie conoscenze tecniche (che non sono tantissime), ma anche di ispirare altri a esplorare questo affascinante mondo.</p>
+        </article>
+
+        <div class="container">
+            <h2>Contattami</h2>
+            <form action="SUBMIT_FORM_URL" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Messaggio:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Invia</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Il Mio Blog Personale. Tutti i diritti riservati.</p>
+    </footer>
+</body>
+</html>
